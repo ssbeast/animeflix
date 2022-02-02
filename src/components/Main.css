@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.main{
+    background-color: #0b0c10;
+    font-family: 'Proza Libre', sans-serif;
+    display: flex;
+    flex-wrap:wrap;
+    align-items:center;
+    margin-top: 0px;
+    justify-content: center;
+    color:purple;
+}
+@media only screen and (max-width: 700px){
+    .main{
+        margin-top: 100px;
+    }
+}
+.card{
+    padding:1px;
+    transition: all 300ms ease;
+    position: relative;
+    border-radius: 6px;
+    margin: 7px;
+    /* box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.034), -2px -2px 5px white,
+     2px 2px 3px gray,  -3px -5px 5px white; */
+    height:300px;
+    width:200px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #1f2833;
+}
+
+.card:hover > #visible{
+    visibility: visible;
+}
+.card h4{
+    position:absolute;
+    bottom:-10px;
+    right:0;
+    left:0;
+    width:100%; 
+    color:white;
+}
+.card img{
+    
+    top: 0;
+    width:100%;
+    left:0;
+    height:80%;
+}
+
+#visible{
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    font-size:20px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+#ic{
+    font-size:80px;
+    color:white;
+}
